@@ -226,6 +226,7 @@ background-color: #fff;
 margin: 0 auto;
 padding-top: 70px;
 padding-bottom: 50px;
+position: relative;
 }
 
 .areaconteudo article{
@@ -266,6 +267,50 @@ line-height: 27px;
 font-size: 17px;
 text-align: left;
 }
+
+.areaconteudo p input[type="checkbox"]{
+    position: absolute;
+    left: -10000px;
+    visibility: hidden;
+}
+
+.areaconteudo p label{
+    background-color: black;
+    color: white;
+    padding: 1px 4px;
+    user-select: none;
+}
+
+.areaconteudo p .nota-rodape{
+    border-top: 2px solid blue;
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    margin-top: -1em;
+    color: grey;
+    background-color: white;
+    z-index: 2;
+    padding: 10px;
+    box-shadow: 0px 0px 5px white;
+}
+
+.areaconteudo p input[type="checkbox"]:checked + label{
+    background-color: blue;
+}
+
+.areaconteudo p input[type="checkbox"]:checked + label + .nota-rodape{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 
 blockquote {
 font-size: 15px;
