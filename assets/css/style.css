@@ -268,6 +268,14 @@ font-size: 17px;
 text-align: left;
 }
 
+blockquote {
+font-size: 15px;
+font-weight: 300;
+line-height: 24px;
+}
+
+/*NOTAS_DE_RODAPÉ*/
+
 .areaconteudo p input[type="checkbox"]{
     position: absolute;
     left: -10000px;
@@ -275,48 +283,47 @@ text-align: left;
 }
 
 .areaconteudo p label{
-    background-color: black;
-    color: white;
+    width: 4px;
+    height: 4px;
+    font-size: 14px;
+    background-color: #d9d9d9;
+    font-weight: bold;
+    color: black;
     padding: 1px 4px;
     user-select: none;
 }
 
 .areaconteudo p .nota-rodape{
-    border-top: 2px solid blue;
+    border-top: 3px solid #00cfa1;
     display: none;
     position: absolute;
+    font-size: 15px;
+    line-height: 23px;
     right: 0;
-    width: 300px;
+    width: 250px;
     margin-top: -1em;
-    color: grey;
+    margin-right: 30px;
+    color: #000;
     background-color: white;
     z-index: 2;
-    padding: 10px;
-    box-shadow: 0px 0px 5px white;
+    padding-top: 15px;
+}
+
+.areaconteudo p .nota-rodape a {
+    text-decoration: none;
+    color: #00a674;
+    font-weight: : normal;
+    text-decoration: underline;
 }
 
 .areaconteudo p input[type="checkbox"]:checked + label{
-    background-color: blue;
+    background-color: #00cfa1;
 }
 
 .areaconteudo p input[type="checkbox"]:checked + label + .nota-rodape{
     display: block;
 }
 
-
-
-
-
-
-
-
-
-
-blockquote {
-font-size: 15px;
-font-weight: 300;
-line-height: 24px;
-}
 
 /*AUTORES*/
 
@@ -389,8 +396,9 @@ text-align: left;
 }
 
 th {
-font-weight: 500;
-background-color: #006f8f;
+font-weight: normal;
+background-color: #000;
+border-bottom: 4px solid #00cfa1;
 padding: 10px;
 color: #fff;
 
@@ -404,7 +412,7 @@ padding: 10px;
 }
 
 .ultimalinha td {
-border-bottom: 4px solid #006f8f;	
+border-bottom: 4px solid #00cfa1;	
 }
 
 table caption {
@@ -471,7 +479,7 @@ margin-bottom: 100px;
 }
 
 #botoes a {
-font-weight: 500;
+font-weight: normal;
 font-size: 20px;
 margin-right: 40px;	
 text-decoration: none;
