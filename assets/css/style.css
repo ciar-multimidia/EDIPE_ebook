@@ -103,6 +103,9 @@ html {
     font-style: normal;
 }
 
+strong,b{
+    font-weight: bold;
+}
 
 
 /*PADROES*/
@@ -222,7 +225,7 @@ font-weight: 300
 }
 
 .areaconteudo {
-font-family: Roboto; 
+font-weight: 300; 
 background-color: #fff;
 margin: 0 auto;
 padding-top: 70px;
@@ -263,7 +266,7 @@ padding-top: 30px;
 }
 
 .areaconteudo p {
-font-family: Roboto-light;
+font-weight: 300;
 line-height: 27px;
 font-size: 17px;
 text-align: left;
@@ -277,16 +280,17 @@ line-height: 24px;
 
 /*NOTAS_DE_RODAPÉ*/
 
-.areaconteudo p input[type="checkbox"]{
+.areaconteudo input[type="checkbox"]{
     position: absolute;
     left: -10000px;
     visibility: hidden;
 }
 
-.areaconteudo p label{
+.areaconteudo label{
     width: 4px;
     height: 4px;
-    font-size: 14px;
+    font-size: 0.7em;
+    vertical-align: super;
     background-color: #d9d9d9;
     font-weight: bold;
     color: black;
@@ -294,7 +298,7 @@ line-height: 24px;
     user-select: none;
 }
 
-.areaconteudo p .nota-rodape{
+.areaconteudo .nota-rodape{
     border-top: 3px solid #00cfa1;
     display: none;
     position: absolute;
@@ -310,20 +314,39 @@ line-height: 24px;
     padding-top: 15px;
 }
 
-.areaconteudo p .nota-rodape a {
+.areaconteudo .nota-rodape a {
     text-decoration: none;
     color: #00a674;
     font-weight: : normal;
     text-decoration: underline;
 }
 
-.areaconteudo p input[type="checkbox"]:checked + label{
+.areaconteudo input[type="checkbox"]:checked + label{
     background-color: #00cfa1;
 }
 
-.areaconteudo p input[type="checkbox"]:checked + label + .nota-rodape{
+.areaconteudo input[type="checkbox"]:checked + label + .nota-rodape{
     display: block;
 }
+
+/*CURRICULO*/
+.boxcurriculo {
+border: 3px solid #00cfa1; 
+color: #000;
+font-weight: 300;
+padding: 15px;
+padding-left: 30px;
+margin: 30px 0;
+}
+
+.boxcurriculo h1 {
+border: none;
+padding: 0;
+font-size: 25px;
+font-weight: 500;
+}
+
+
 
 
 /*AUTORES*/
@@ -334,14 +357,14 @@ width: 250px;
 float: right;
 color: #00cfa1;
 margin-top: 30px;
-padding: 10px;
+padding: 20px;
 font-size: 18px;
 line-height: 30px;
 }
 
 .autores span {
 display: block;
-text-align: right;
+/*text-align: right;*/
 }
 
 
@@ -390,6 +413,10 @@ margin: 40px 0;
 color: #000;
 }
 
+tbody {
+border-bottom: 4px solid #00cfa1;   
+}
+
 th, td {
 font-family: Roboto;
 font-size: 15px;
@@ -402,7 +429,6 @@ background-color: #000;
 border-bottom: 4px solid #00cfa1;
 padding: 10px;
 color: #fff;
-
 }
 
 td{
@@ -410,10 +436,6 @@ font-weight: 300;
 border-bottom: 1px solid #000;
 color: #000;
 padding: 10px;
-}
-
-.ultimalinha td {
-border-bottom: 4px solid #00cfa1;	
 }
 
 table caption {
