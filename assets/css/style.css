@@ -251,18 +251,26 @@ font-size: 30px;
 color: #000;
 border-left: 3px solid #00cfa1;
 padding-left: 10px;
+line-height: 40px;
 }
 
 .areaconteudo h2{
 font-size: 25px;
 font-weight: 500;
 padding-top: 30px;
+line-height: 35px;
 }
 
 .areaconteudo h3 {
 font-size: 20px;
 font-weight: 500;
 padding-top: 30px;
+}
+
+.areaconteudo h5 {
+font-weight: 500;
+font-size: 17px;
+line-height: 23px;
 }
 
 .areaconteudo p {
@@ -276,6 +284,19 @@ blockquote {
 font-size: 15px;
 font-weight: 300;
 line-height: 24px;
+}
+
+.areaconteudo a {
+color: #00a674;
+font-weight: normal;
+overflow-wrap: break-word;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+.areaconteudo li {
+line-height: 23px;
+padding-bottom: 10px;
 }
 
 /*NOTAS_DE_RODAPÉ*/
@@ -328,6 +349,8 @@ line-height: 24px;
 .areaconteudo input[type="checkbox"]:checked + label + .nota-rodape{
     display: block;
 }
+
+
 
 /*CURRICULO*/
 .boxcurriculo {
@@ -389,7 +412,8 @@ padding-bottom: 5px;
 figure figcaption {
 font-family: Roboto-Regular;
 font-size: 16px;
-text-align: center; 
+text-align: left;
+line-height: 25px; 
 padding-bottom: 20px;
 }
 
@@ -401,7 +425,7 @@ width: 100%;
 figure.galeria img {
 display: inline-block;
 margin: 2px;
-max-height: 300px;    
+max-width: 100%;    
 }
 
 /*TABELA*/
@@ -421,6 +445,7 @@ th, td {
 font-family: Roboto;
 font-size: 15px;
 text-align: left;
+line-height: 20px;
 }
 
 th {
