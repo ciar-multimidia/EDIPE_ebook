@@ -256,7 +256,7 @@ font-weight: 300;
 background-color: #fff;
 margin: 0 auto;
 padding-top: 70px;
-padding-bottom: 50px;
+padding-bottom: 100px;
 position: relative;
 }
 
@@ -533,18 +533,25 @@ text-align: right;
 /*RODAPÉ*/
 
 footer {
-background-color: #642340;	
-padding-top: 25px;
-padding-bottom: 25px;
+background-image: url(../img/rdape.jpg);
+background-color: #642340;
+padding-top: 15px;
+padding-bottom: 12px;
 font-family: Roboto-Regular;
-letter-spacing: 0.5px;
-font-size: 24px;
+letter-spacing: 1px;
+font-size: 17px;
+text-transform: uppercase;
+text-shadow: #000 1px 2px 1px;
+position: fixed;
+bottom:0;
+width:100%;
 }
 
 footer a {
 text-decoration: none;	
 color: #ffffff;
-font-size: 24px;
+font-size: 15px;
+text-shadow: #000 1px 2px 1px;
 }
 
 .esquerda{
@@ -566,6 +573,15 @@ margin-bottom: 40px;
 width: 100%
 }
 
+#botoes2 {
+display: flex;
+flex-wrap: wrap;
+background-color: #fff;
+margin-top: 100px;
+margin-bottom: 40px;
+width: 50%
+}
+
 #botoes a {
 font-weight: normal;
 font-size: 20px;
@@ -582,9 +598,7 @@ border-top: 5px solid #000;
 cursor: pointer;
 }
 
-#sumario {
-width: 100%;
-}
+
 
 #sumario h1 {
 font-size: 40px;
@@ -634,12 +648,57 @@ font-size: 0.7em;
 padding-top: 20px;
 }
 
+#fimficha {
+background-color: #bba1ad;
+}
+
+.containerficha{
+    font-size: 0.9em;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-family: Roboto;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
 /*FICHA TÉCNICA*/
 
 .ficha {
 border-top: 5px solid #642340;
 padding-bottom: 70px;
 }
+
+.iniciar {
+font-size: 0.8em;
+font-weight: normal;
+text-transform: uppercase;
+color: #fff;
+background-color: #000;
+width: 215px;
+text-align: center;
+margin-top: 0;
+margin-bottom: 25px;
+padding: 10px;
+margin-right: 30px;
+}
+
+.iniciar a {
+text-decoration: none;
+color: #fff;
+}
+
+.iniciar:hover {
+background-color: #642340 !important;
+color: #000;
+cursor: pointer;
+font-weight: 300;
+}
+
 
 .imprimir {
 font-size: 0.8em;
