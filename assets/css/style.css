@@ -433,6 +433,27 @@ background-color: #642340;
 cursor: pointer;
 }
 
+.comoref {
+border: 3px solid #642340;
+color: #642340;
+padding: 20px;
+font-size: 13px;
+line-height: 19px;
+width: 100%;
+margin-top: 15px;
+}
+
+.comoref span {
+display: block;
+/*text-align: right;*/
+}
+
+.comoref a {
+color: #642340;
+font-size: 13px;
+line-height: 19px;
+}
+
 
 /*IMAGENS*/
 
